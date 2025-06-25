@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_fake_company        #  ←  you choose this source-name
+    database: "{{ target.database }}"   # optional override
+    schema: sources                    # matches the +schema you set in dbt_project.yml
+    tables:
+      - name: fake_people              # the physical table name in Snowflake
+        description: "Raw people data ingested from XYZ"
