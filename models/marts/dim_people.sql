@@ -17,5 +17,6 @@ with people as (
 
 )
 select p.*
+, area_code
 from people p
 join personal_info i on p.id = i.id 
