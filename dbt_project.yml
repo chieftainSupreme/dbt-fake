@@ -34,7 +34,7 @@ models:
   dbt_fake_company:
     sources:
       +materialized: view
-      +schema: sources
+      +schema: dbt_eelias_source_seeds
     elementary:
     ## elementary models will be created in the schema '<your_schema>_elementary'
     +schema: "elementary"
