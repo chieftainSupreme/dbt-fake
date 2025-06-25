@@ -7,3 +7,5 @@ sources:
     tables:
       - name: fake_people              # the physical table name in Snowflake
         description: "Raw people data ingested from XYZ"
+      - name: fake_personal_info              # the physical table name in Snowflake
+        description: "Raw personal info ingested from XYZ"
