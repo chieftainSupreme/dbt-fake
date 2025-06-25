@@ -10,6 +10,6 @@ with people as (
     from {{ ref('stg_fake__personal_info') }}
 
 )
-select *
+select p.*
 from people p
 join personal_info i on p.id = i.id 
