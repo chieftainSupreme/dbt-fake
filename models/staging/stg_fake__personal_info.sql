@@ -8,5 +8,11 @@ with source as (
       , credit_score
     from {{ source('raw_fake_company', 'fake_personal_info') }}
 )
-select *
+select id
+      , area_code
+      , phone_number
+      , birthdate
+      , blood_type
+      , favorite_color
+      , credit_score
 from source
